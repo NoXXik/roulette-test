@@ -1,0 +1,34 @@
+.roulette-line {
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.roulette-container {
+    height: 100px;
+    position: relative;
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.roulette {
+    border-radius: 10px;
+    /*height: 92px;*/
+    overflow: hidden;
+    position: relative;
+    margin: 18px 0 0 0;
+    background-image: url("src/shared/assets/png/nums.png");
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+    background-size: cover;
+}
+
+button {
+    margin-top: 10px;
+}
+
+
