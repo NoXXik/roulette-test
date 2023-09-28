@@ -19,7 +19,7 @@ RUN npm run build
 FROM nginx:alpine
 
 COPY --from=builder /app/dist /usr/share/nginx/html
-COPY --from=builder /app/.nginx/nginx.conf /etc/nginx/sites-enabled/default
+COPY --from=builder /app/.nginx/nginx.conf /etc/nginx/conf.d/default.conf
 
 # Открываем порт 80 для доступа к приложению
 EXPOSE 80
